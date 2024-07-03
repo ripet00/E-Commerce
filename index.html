@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!--Header-->
+    <div class="header" id="home">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" alt="" width="125px" />
+            </a>
+          </div>
+          <nav id="menuItems">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+            <a href="cart.html">
+              <img src="images/cart.png" alt="" width="30px" height="30px" />
+            </a>
+          </nav>
+        </div>
+        <!--Burger Menu Button-->
+        <div id="menuBtn">
+          <img src="images/menu.png" alt="" id="menu" />
+        </div>
+        <div id="sideNav">
+          <nav>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="account.html">Account</a></li>
+              <li>
+                <a href="cart.html"
+                  ><img src="images/cart.png" alt="" width="30px" height="30px"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <h1 id="text" onload="typing()"></h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              earum officia ut. Blanditiis impedit fugiat cumque reprehenderit
+              delectus, fuga distinctio, ea omnis perspiciatis nesciunt ad
+              reiciendis voluptatibus rerum officia ex?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+              neque aliquid aliquam asperiores alias pariatur? Deserunt in atque
+              ut nulla reiciendis exercitationem a, veritatis repellendus omnis
+              impedit autem aperiam assumenda.
+            </p>
+            <a href="" class="btn">Explore Now &#8594;</a>
+          </div>
+          <div class="col-2">
+            <img
+              src="images/image-1.jpg"
+              alt=""
+              onclick="openImg(this)"
+              id="image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Featuren categories product-->
+    <div class="small-container">
+      <h2 class="title">Featured Products</h2>
+      <div class="row"><h3>Ceue's Section Products:</h3></div>
+      <!--1st row-->
+      <div class="row">
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-1.jpg" alt="product-1.jpg" />
+          <h4>Girls Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rp. 300.000,-</p>
+        </div>
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-2.jpg" alt="product-2.jpg" />
+          <h4>Girls Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rp. 300.000,-</p>
+        </div>
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-3.jpg" alt="product-1.jpg" />
+          <h4>Girls Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rp. 300.000,-</p>
+        </div>
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-4.jpg" alt="product-2.jpg" />
+          <h4>Girls Bag</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rp. 300.000,-</p>
+        </div>
+      </div>
+      <div class="row"><h3>Man Products</h3></div>
+      <!--2nd row-->
+      <div class="row">
+        <!--Product 6-->
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-5.jpg" alt="product-5.jpg" />
+          <h4>Man Shoe</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rp. 1.000.000,-</p>
+        </div>
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-7.jpg" alt="product-5.jpg" />
+          <h4>Headphone</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rp. 1.200.000,-</p>
+        </div>
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-8.jpg" alt="product-5.jpg" />
+          <h4>Man Shoe</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p>Rp. 1.000.000,-</p>
+        </div>
+        <div class="col-4" onclick="zoomIn(this)">
+          <img src="images/product-9.jpg" alt="product-5.jpg" />
+          <h4>Headphone</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>Rp. 1.200.000,-</p>
+        </div>
+      </div>
+    </div>
+    <!--Testimonial-->
+    <div class="testimoni">
+      <div class="small-container">
+        <h2 class="title">Testimonials</h2>
+        <div class="row">
+          <!--Testimoni 1-->
+          <div class="col-3" onclick="zoomIn(this)">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloremque repudiandae nulla, recusandae, laudantium ducimus
+              itaque doloribus tenetur, omnis cupiditate autem nam. Dolore
+              commodi consectetur expedita sequi, corporis reprehenderit officia
+              cupiditate?
+            </p>
+            <i class="fa fa-quote-right"></i>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <img
+              src="images/user-1.png"
+              alt=""
+              onclick="openImg(this)"
+              id="image"
+            />
+            <h3>Natasya Romanof</h3>
+          </div>
+          <!--Testimoni 2-->
+          <div class="col-3" onclick="zoomIn(this)">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloremque repudiandae nulla, recusandae, laudantium ducimus
+              itaque doloribus tenetur, omnis cupiditate autem nam. Dolore
+              commodi consectetur expedita sequi, corporis reprehenderit officia
+              cupiditate?
+            </p>
+            <i class="fa fa-quote-right"></i>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img
+              src="images/user-2.png"
+              alt=""
+              onclick="openImg(this)"
+              id="image"
+            />
+            <h3>Willy Smith</h3>
+          </div>
+          <!--Testimoni 2-->
+          <div class="col-3" onclick="zoomIn(this)">
+            <i class="fa fa-quote-left"></i>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Doloremque repudiandae nulla, recusandae, laudantium ducimus
+              itaque doloribus tenetur, omnis cupiditate autem nam. Dolore
+              commodi consectetur expedita sequi, corporis reprehenderit officia
+              cupiditate?
+            </p>
+            <i class="fa fa-quote-right"></i>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+            <img
+              src="images/user-3.png"
+              alt=""
+              onclick="openImg(this)"
+              id="image"
+            />
+            <h3>Sofia</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Brands-->
+    <div class="brands">
+      <div class="small-container">
+        <div class="row">
+          <!--Beand 1-->
+          <div class="col-5">
+            <img
+              src="images/logo-godrej.png"
+              alt=""
+              onclick="openImg(this)"
+              id="image"
+            />
+          </div>
+          <!--Beand 2-->
+          <div class="col-5">
+            <img
+              src="images/logo-oppo.png"
+              alt=""
+              onclick="openImg(this)"
+              id="image"
+            />
+          </div>
+          <!--Beand 3-->
+          <div class="col-5">
+            <img
+              src="images/logo-paypal.png"
+              alt=""
+              onclick="openImg(this)"
+              id="image"
+            />
+          </div>
+          <!--Beand 4-->
+          <div class="col-5">
+            <img
+              src="images/logo-philips.png"
+              alt=""
+              onclick="openImg(this)"
+              id="image"
+            />
+          </div>
+          <!--Beand 5-->
+          <div class="col-5">
+            <img
+              src="images/logo-godrej.png"
+              alt=""
+              onclick="openImg(this)"
+              id="image"
+            />
+          </div>
+          <!--SVG Waves-->
+
+          <!--Footer-->
+          <div class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="footer-col-1">
+                  <h3>Download Our App</h3>
+                  <p>Donload App for Android <br />and ior mobile phone</p>
+                  <div class="app-logo">
+                    <img
+                      src="images/play-store.png"
+                      alt=""
+                      onclick="openImg(this)"
+                      id="image"
+                    />
+                    <img
+                      src="images/app-store.png"
+                      alt=""
+                      onclick="openImg(this)"
+                      id="image"
+                    />
+                  </div>
+                </div>
+                <div class="footer-col-2">
+                  <img
+                    src="images/logo-white.png"
+                    alt=""
+                    onclick="openImg(this)"
+                    id="image"
+                  />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Distinctio tempora deleniti obcaecati blanditiis aperiam a
+                    doloribus nam. Quod, esse. Consequatur soluta doloremque
+                    quos praesentium animi. Dolorum molestiae beatae eum
+                    temporibus.
+                  </p>
+                </div>
+                <div class="footer-col-3">
+                  <h3>Useful Links</h3>
+                  <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                  </ul>
+                </div>
+                <div class="footer-col-4">
+                  <h3>Follow us</h3>
+                  <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                  </ul>
+                </div>
+              </div>
+              <hr />
+              <p class="copyright">
+                Copyright &copy; <span id="currentYear"></span> -
+                <a target="_blank" href="https://ripet00.github.io">Rifat</a>
+                & Wardrobe.com | All rights reserved
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
